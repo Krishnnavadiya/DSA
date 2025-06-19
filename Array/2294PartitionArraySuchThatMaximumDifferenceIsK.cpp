@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//2294. Partition Array Such That Maximum Difference Is K
+
 class Solution
 {
 public:
