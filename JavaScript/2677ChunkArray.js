@@ -1,0 +1,18 @@
+/**
+ * @param {Array} arr
+ * @param {number} size
+ * @return {Array}
+ */
+
+// 2677. Chunk Array
+
+var chunk = function (arr, size) {
+  let result = [];
+  for (let i = 0; i < arr.length; i = i + size) {
+    let cache = arr.slice(i, i + size);
+    result.push(cache);
+  }
+  return result;
+};
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(chunk(arr, 2));
