@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+// 326. Power of Three
+
+class Solution
+{
+public:
+    bool isPowerOfThree(int n)
+    {
+        if (n <= 0)
+            return false;
+        while (n % 3 == 0)
+        {
+            n /= 3;
+        }
+        return n == 1;
+    }
+};
+
+int main()
+{
+    int n = 27;
+    Solution sol;
+    cout << sol.isPowerOfThree(n);
+    return 0;
+}
